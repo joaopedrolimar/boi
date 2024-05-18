@@ -300,6 +300,61 @@ section:nth-of-type(2) article:nth-of-type(3) img {
   flex-direction: column;
 }
 
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    nav a:last-of-type {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        margin-bottom: 0;
+    }
+
+    .imgtema {
+        width: 80%;
+    }
+
+    #play-pause-button {
+        left: 10%;
+        bottom: 10%;
+    }
+
+    section:first-of-type {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    section:first-of-type .fixed .content {
+        padding: 4rem 1rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    section:nth-of-type(2) .content {
+        padding: 2rem 1rem;
+    }
+
+    .text-blocks {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .text-blocks p {
+        font-size: 1rem;
+    }
+
+    .indicators {
+        right: 0.5rem;
+    }
+}
+
 .indicator {
   background: linear-gradient(white, white) padding-box;
   border-radius: 100px;
